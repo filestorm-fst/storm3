@@ -12,5 +12,7 @@
   "devDependencies": {
   },
   "dependencies": {
+    "underscore": "1.9.1",
+    "eventemitter3": "3.1.2"
   }
 }

@@ -12,5 +12,6 @@
   "devDependencies": {
   },
   "dependencies": {
+    "xhr2-cookies": "1.1.0"
   }
 }

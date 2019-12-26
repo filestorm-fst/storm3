@@ -12,5 +12,7 @@
   "devDependencies": {
   },
   "dependencies": {
+    "eth-ens-namehash": "2.0.8",
+    "underscore": "1.9.1"
   }
 }

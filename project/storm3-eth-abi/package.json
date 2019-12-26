@@ -12,5 +12,7 @@
   "devDependencies": {
   },
   "dependencies": {
+    "underscore": "1.9.1",
+    "ethers": "4.0.41"
   }
 }

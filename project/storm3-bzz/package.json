@@ -12,5 +12,7 @@
   "devDependencies": {
   },
   "dependencies": {
+    "underscore": "1.9.1",
+    "swarm-js": "0.1.39"
   }
 }

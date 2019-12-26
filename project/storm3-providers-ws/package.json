@@ -12,5 +12,7 @@
   "devDependencies": {
   },
   "dependencies": {
+    "underscore": "1.9.1",
+    "@web3-js/websocket": "1.0.30"
   }
 }
