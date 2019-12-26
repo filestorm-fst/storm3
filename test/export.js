@@ -1,5 +1,5 @@
 module.exports = {
-  Fst3: require('../project/fst3/export'),
+  Storm3: require('../project/storm3/export'),
   Web3: require('web3')
 };
 
