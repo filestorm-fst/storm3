@@ -1,10 +1,10 @@
 const config = require('../config');
 
-const {storm3} = require('../export');
+const {Storm3} = require('../export');
 
 (async function () {
-  console.log(storm3.modules);
-  console.log(new storm3().modules);
+  console.log(Storm3.modules);
+  console.log(new Storm3().modules);
 }());
 
 

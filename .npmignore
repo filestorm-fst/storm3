@@ -1,0 +1,8 @@
+
+*.idea
+.gitignore
+.editorconfig
+.travis.yml
+.npmignore
+.DS_Store
+  
