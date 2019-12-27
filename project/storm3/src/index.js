@@ -6,6 +6,13 @@ const Personal = require('../../storm3-fst-personal/export');
 const Shh = require('../../storm3-shh/export');
 const Bzz = require('../../storm3-bzz/export');
 const utils = require('../../storm3-utils/export');
+let modules = {
+  Fst,
+  Net,
+  Personal,
+  Shh,
+  Bzz
+};
 
 function Storm3() {
   const _this = this;
@@ -32,24 +39,12 @@ function Storm3() {
     return true;
   };
   // modules
-  this.modules = {
-    Fst,
-    Net,
-    Personal,
-    Shh,
-    Bzz
-  };
+  this.modules = modules;
 }
 
 Storm3.version = version;
 Storm3.utils = utils;
-Storm3.modules = {
-  Fst,
-  Net,
-  Personal,
-  Shh,
-  Bzz
-};
+Storm3.modules = modules;
 
 core.addProviders(Storm3);
 
