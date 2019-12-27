@@ -1,5 +1,5 @@
 const _ = require('underscore');
-const errors = require('../../storm3-core-helpers/export').errors;
+const errors = require('storm3-core-helpers').errors;
 
 const Ws = require('@web3-js/websocket').w3cwebsocket;
 const url = require('url');
