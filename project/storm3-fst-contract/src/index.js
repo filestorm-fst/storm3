@@ -23,7 +23,7 @@ const Contract = function Contract(jsonInterface, address, options) {
     args = Array.prototype.slice.call(arguments);
 
   if (!(this instanceof Contract)) {
-    throw new Error('Please use the "new" keyword to instantiate a web3.eth.contract() object!');
+    throw new Error('Please use the "new" keyword to instantiate a storm3.fst.contract() object!');
   }
 
   // sets _requestmanager
