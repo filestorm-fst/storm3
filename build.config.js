@@ -5,11 +5,7 @@ const moduleRules = {
   rules: [
     {
       test: /\.js$/,
-      use: [
-        {
-          loader: 'babel-loader',
-        }
-      ],
+      use: [{loader: 'babel-loader',}],
       exclude: /node_modules/,
     },
   ]
@@ -25,7 +21,7 @@ module.exports = [
     },
     output: {
       path: path.resolve(__dirname, 'dist'),
-      filename: 'Storm3.min.js',
+      filename: 'storm3.browser.min.js',
       library: 'Storm3',
       libraryTarget: 'umd',
       umdNamedDefine: true
