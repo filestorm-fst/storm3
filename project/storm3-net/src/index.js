@@ -1,6 +1,6 @@
-const core = require('../../storm3-core/export');
-const Method = require('../../storm3-core-method/export');
-const utils = require('../../storm3-utils/export');
+const core = require('storm3-core');
+const Method = require('storm3-core-method');
+const utils = require('storm3-utils');
 
 
 const Net = function () {

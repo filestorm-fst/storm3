@@ -1,16 +1,19 @@
 {
   "name": "storm3-net",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1-alpha.1",
+  "description": "This is an alpha version",
   "main": "export.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "longjinwen<204084802@qq.com>",
   "license": "ISC",
   "devDependencies": {
   },
   "dependencies": {
+    "storm3-core": "0.0.1-alpha.1",
+    "storm3-core-method": "0.0.1-alpha.1",
+    "storm3-utils": "0.0.1-alpha.1"
   }
 }

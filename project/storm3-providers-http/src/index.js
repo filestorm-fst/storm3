@@ -1,4 +1,4 @@
-const errors = require('../../storm3-core-helpers/export').errors;
+const errors = require('storm3-core-helpers').errors;
 const XHR2 = require('xhr2-cookies').XMLHttpRequest; // jshint ignore: line
 const http = require('http');
 const https = require('https');

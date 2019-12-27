@@ -1,5 +1,5 @@
 const _ = require('underscore');
-const utils = require('../../storm3-utils/export');
+const utils = require('storm3-utils');
 
 const EthersAbi = require('ethers/utils/abi-coder').AbiCoder;
 const ethersAbiCoder = new EthersAbi(function (type, value) {

@@ -1,5 +1,5 @@
 const _ = require('underscore');
-const errors = require('../../storm3-core-helpers/export').errors;
+const errors = require('storm3-core-helpers').errors;
 const EventEmitter = require('eventemitter3');
 
 function Subscription(options) {

@@ -1,6 +1,6 @@
-const formatters = require('../../storm3-core-helpers/export').formatters;
-const Method = require('../../storm3-core-method/export');
-const utils = require('../../storm3-utils/export');
+const formatters = require('storm3-core-helpers').formatters;
+const Method = require('storm3-core-method');
+const utils = require('storm3-utils');
 
 
 const extend = function (pckg) {

@@ -1,11 +1,11 @@
 const _ = require('underscore');
-const errors = require('../../storm3-core-helpers/export').errors;
+const errors = require('storm3-core-helpers').errors;
 const Jsonrpc = require('./jsonrpc.js');
 const BatchManager = require('./batch.js');
 const givenProvider = require('./givenProvider.js');
-const WebsocketProvider = require('../../storm3-providers-ws/export');
-const HttpProvider = require('../../storm3-providers-http/export');
-const IpcProvider = require('../../storm3-providers-ipc/export');
+const WebsocketProvider = require('storm3-providers-ws');
+const HttpProvider = require('storm3-providers-http');
+const IpcProvider = require('storm3-providers-ipc');
 /**
  * It's responsible for passing messages to providers
  * It's also responsible for polling the ethereum node for incoming messages

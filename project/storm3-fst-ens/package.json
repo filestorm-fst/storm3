@@ -1,18 +1,20 @@
 {
   "name": "storm3-fst-ens",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1-alpha.1",
+  "description": "This is an alpha version",
   "main": "export.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "longjinwen<204084802@qq.com>",
   "license": "ISC",
   "devDependencies": {
   },
   "dependencies": {
     "eth-ens-namehash": "2.0.8",
-    "underscore": "1.9.1"
+    "underscore": "1.9.1",
+    "storm3-fst-contract": "0.0.1-alpha.1",
+    "storm3-core-promievent": "0.0.1-alpha.1"
   }
 }

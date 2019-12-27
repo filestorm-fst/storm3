@@ -1,8 +1,8 @@
-const core = require('../../storm3-core/export');
-const Subscriptions = require('../../storm3-core-subscriptions/export').subscriptions;
-const Method = require('../../storm3-core-method/export');
+const core = require('storm3-core');
+const Subscriptions = require('storm3-core-subscriptions').subscriptions;
+const Method = require('storm3-core-method');
 // const formatters = require('web3-core-helpers').formatters;
-const Net = require('../../storm3-net/export');
+const Net = require('storm3-net');
 
 
 const Shh = function Shh() {

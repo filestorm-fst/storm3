@@ -1,12 +1,12 @@
 const _ = require('underscore');
-const core = require('../../storm3-core/export');
-const Method = require('../../storm3-core-method/export');
-const utils = require('../../storm3-utils/export');
-const Subscription = require('../../storm3-core-subscriptions/export').subscription;
-const formatters = require('../../storm3-core-helpers/export').formatters;
-const errors = require('../../storm3-core-helpers/export').errors;
-const promiEvent = require('../../storm3-core-promievent/export');
-const abi = require('../../storm3-fst-abi/export');
+const core = require('storm3-core');
+const Method = require('storm3-core-method');
+const utils = require('storm3-utils');
+const Subscription = require('storm3-core-subscriptions').subscription;
+const formatters = require('storm3-core-helpers').formatters;
+const errors = require('storm3-core-helpers').errors;
+const promiEvent = require('storm3-core-promievent');
+const abi = require('storm3-fst-abi');
 
 
 /**

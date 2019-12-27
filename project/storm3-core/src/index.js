@@ -1,4 +1,4 @@
-const requestManager = require('../../storm3-core-requestmanager/export');
+const requestManager = require('storm3-core-requestmanager');
 const extend = require('./extend.js');
 
 module.exports = {

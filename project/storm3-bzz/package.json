@@ -1,13 +1,13 @@
 {
   "name": "storm3-bzz",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.001-alpha.001",
+  "description": "This is an alpha version",
   "main": "export.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "longjinwen<204084802@qq.com>",
   "license": "ISC",
   "devDependencies": {
   },

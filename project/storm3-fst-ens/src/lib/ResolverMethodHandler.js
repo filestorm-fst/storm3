@@ -1,4 +1,4 @@
-const PromiEvent = require('../../../storm3-core-promievent/export');
+const PromiEvent = require('storm3-core-promievent');
 const namehash = require('eth-ens-namehash');
 const _ = require('underscore');
 

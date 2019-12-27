@@ -1,9 +1,9 @@
 const _ = require('underscore');
-const errors = require('../../storm3-core-helpers/export').errors;
-const formatters = require('../../storm3-core-helpers/export').formatters;
-const utils = require('../../storm3-utils/export');
-const promiEvent = require('../../storm3-core-promievent/export');
-const Subscriptions = require('../../storm3-core-subscriptions/export').subscriptions;
+const errors = require('storm3-core-helpers').errors;
+const formatters = require('storm3-core-helpers').formatters;
+const utils = require('storm3-utils');
+const promiEvent = require('storm3-core-promievent');
+const Subscriptions = require('storm3-core-subscriptions').subscriptions;
 
 const Method = function Method(options) {
 

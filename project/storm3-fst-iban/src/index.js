@@ -1,4 +1,4 @@
-const utils = require('../../storm3-utils/export');
+const utils = require('storm3-utils');
 const BigNumber = require('bn.js');
 
 

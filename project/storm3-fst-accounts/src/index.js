@@ -1,6 +1,6 @@
 const _ = require('underscore');
-const core = require('../../storm3-core/export');
-const Method = require('../../storm3-core-method/export');
+const core = require('storm3-core');
+const Method = require('storm3-core-method');
 const Promise = require('any-promise');
 const Account = require('eth-lib/lib/account');
 const Hash = require('eth-lib/lib/hash');
@@ -10,8 +10,8 @@ const cryp = (typeof global === 'undefined') ? require('crypto-browserify') : re
 const scrypt = require('@web3-js/scrypt-shim');
 
 const uuid = require('uuid');
-const utils = require('../../storm3-utils/export');
-const helpers = require('../../storm3-core-helpers/export');
+const utils = require('storm3-utils');
+const helpers = require('storm3-core-helpers');
 const Transaction = require('ethereumjs-tx').Transaction;
 const Common = require('ethereumjs-common').default;
 

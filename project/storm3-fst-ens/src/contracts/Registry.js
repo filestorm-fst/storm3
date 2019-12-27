@@ -1,7 +1,7 @@
 const _ = require('underscore');
-const Contract = require('../../../storm3-fst-contract/export');
+const Contract = require('storm3-fst-contract');
 const namehash = require('eth-ens-namehash');
-const PromiEvent = require('../../../storm3-core-promievent/export');
+const PromiEvent = require('storm3-core-promievent');
 const REGISTRY_ABI = require('../ressources/ABI/Registry');
 const RESOLVER_ABI = require('../ressources/ABI/Resolver');
 

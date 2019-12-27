@@ -1,5 +1,5 @@
 const Jsonrpc = require('./jsonrpc');
-const errors = require('../../storm3-core-helpers/export').errors;
+const errors = require('storm3-core-helpers').errors;
 
 const Batch = function (requestManager) {
   this.requestManager = requestManager;

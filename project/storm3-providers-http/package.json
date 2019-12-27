@@ -1,17 +1,18 @@
 {
   "name": "storm3-providers-http",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1-alpha.1",
+  "description": "This is an alpha version",
   "main": "export.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "longjinwen<204084802@qq.com>",
   "license": "ISC",
   "devDependencies": {
   },
   "dependencies": {
-    "xhr2-cookies": "1.1.0"
+    "xhr2-cookies": "1.1.0",
+    "storm3-core-helpers": "0.0.1-alpha.1"
   }
 }

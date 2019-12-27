@@ -1,9 +1,8 @@
-const core = require('../../storm3-core/export');
-const Method = require('../../storm3-core-method/export');
-const utils = require('../../storm3-utils/export');
-const Net = require('../../storm3-net/export');
-
-const formatters = require('../../storm3-core-helpers').formatters;
+const core = require('storm3-core');
+const Method = require('storm3-core-method');
+const utils = require('storm3-utils');
+const Net = require('storm3-net');
+const formatters = require('storm3-core-helpers').formatters;
 
 
 const Personal = function Personal() {
