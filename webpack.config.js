@@ -19,7 +19,7 @@ const mode = 'production';
 module.exports = [
   {
     mode,
-    devtool: 'source-map',
+    // devtool: 'source-map',
     entry: {
       index: './project/storm3/export.js',
     },

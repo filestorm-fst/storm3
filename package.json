@@ -4,7 +4,7 @@
   "main": "project/storm3/export.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -p"
+    "build-browser": "webpack -p"
   },
   "description": "This is an alpha version",
   "keywords": [],
