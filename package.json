@@ -1,14 +1,14 @@
 {
   "name": "storm3",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.1-alpha.1",
+  "main": "project/storm3/export.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack -p"
   },
+  "description": "This is an alpha version",
   "keywords": [],
-  "author": "",
+  "author": "longjinwen<204084802@qq.com>",
   "license": "ISC",
   "dependencies": {
   },
