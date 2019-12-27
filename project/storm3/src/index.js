@@ -1,13 +1,13 @@
 const version = require('../package.json').version;
 const core = require('../../storm3-core/export');
-const Eth = require('../../storm3-eth/export');
+const Fst = require('../../storm3-fst/export');
 const Net = require('../../storm3-net/export');
-const Personal = require('../../storm3-eth-personal/export');
+const Personal = require('../../storm3-fst-personal/export');
 const Shh = require('../../storm3-shh/export');
 const Bzz = require('../../storm3-bzz/export');
 const utils = require('../../storm3-utils/export');
 
-function storm3() {
+function Storm3() {
   const _this = this;
 
 
@@ -16,7 +16,7 @@ function storm3() {
   this.version = version;
   this.utils = utils;
 
-  this.eth = new Eth(this);
+  this.fst = new Fst(this);
   this.shh = new Shh(this);
   this.bzz = new Bzz(this);
 
@@ -25,7 +25,7 @@ function storm3() {
   this.setProvider = function (provider, net) {
     setProvider.apply(_this, arguments);
 
-    this.eth.setProvider(provider, net);
+    this.fst.setProvider(provider, net);
     this.shh.setProvider(provider, net);
     this.bzz.setProvider(provider);
 
@@ -33,7 +33,7 @@ function storm3() {
   };
   // modules
   this.modules = {
-    Eth,
+    Fst,
     Net,
     Personal,
     Shh,
@@ -41,17 +41,17 @@ function storm3() {
   };
 }
 
-storm3.version = version;
-storm3.utils = utils;
-storm3.modules = {
-  Eth,
+Storm3.version = version;
+Storm3.utils = utils;
+Storm3.modules = {
+  Fst,
   Net,
   Personal,
   Shh,
   Bzz
 };
 
-core.addProviders(storm3);
+core.addProviders(Storm3);
 
-module.exports = storm3;
+module.exports = Storm3;
 

@@ -11,3 +11,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 /batch
+/test/config.js

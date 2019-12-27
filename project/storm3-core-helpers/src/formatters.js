@@ -1,6 +1,6 @@
 const _ = require('underscore');
 const utils = require('../../storm3-utils/export');
-const Iban = require('../../storm3-eth-iban/export');
+const Iban = require('../../storm3-fst-iban/export');
 
 /**
  * Should the format output to a big number
