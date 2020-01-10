@@ -18,23 +18,23 @@ const formatter = helpers.formatters;
 
 
 const blockCall = function (args) {
-  return (_.isString(args[0]) && args[0].indexOf('0x') === 0) ? 'eth_getBlockByHash' : 'eth_getBlockByNumber';
+  return (_.isString(args[0]) && args[0].indexOf('0x') === 0) ? 'fst_getBlockByHash' : 'fst_getBlockByNumber';
 };
 
 const transactionFromBlockCall = function (args) {
-  return (_.isString(args[0]) && args[0].indexOf('0x') === 0) ? 'eth_getTransactionByBlockHashAndIndex' : 'eth_getTransactionByBlockNumberAndIndex';
+  return (_.isString(args[0]) && args[0].indexOf('0x') === 0) ? 'fst_getTransactionByBlockHashAndIndex' : 'fst_getTransactionByBlockNumberAndIndex';
 };
 
 const uncleCall = function (args) {
-  return (_.isString(args[0]) && args[0].indexOf('0x') === 0) ? 'eth_getUncleByBlockHashAndIndex' : 'eth_getUncleByBlockNumberAndIndex';
+  return (_.isString(args[0]) && args[0].indexOf('0x') === 0) ? 'fst_getUncleByBlockHashAndIndex' : 'fst_getUncleByBlockNumberAndIndex';
 };
 
 const getBlockTransactionCountCall = function (args) {
-  return (_.isString(args[0]) && args[0].indexOf('0x') === 0) ? 'eth_getBlockTransactionCountByHash' : 'eth_getBlockTransactionCountByNumber';
+  return (_.isString(args[0]) && args[0].indexOf('0x') === 0) ? 'fst_getBlockTransactionCountByHash' : 'fst_getBlockTransactionCountByNumber';
 };
 
 const uncleCountCall = function (args) {
-  return (_.isString(args[0]) && args[0].indexOf('0x') === 0) ? 'eth_getUncleCountByBlockHash' : 'eth_getUncleCountByBlockNumber';
+  return (_.isString(args[0]) && args[0].indexOf('0x') === 0) ? 'fst_getUncleCountByBlockHash' : 'fst_getUncleCountByBlockNumber';
 };
 
 
@@ -276,65 +276,65 @@ const Fst = function Fst() {
     }),
     new Method({
       name: 'getProtocolVersion',
-      call: 'eth_protocolVersion',
+      call: 'fst_protocolVersion',
       params: 0
     }),
     new Method({
       name: 'getCoinbase',
-      call: 'eth_coinbase',
+      call: 'fst_coinbase',
       params: 0
     }),
     new Method({
       name: 'isMining',
-      call: 'eth_mining',
+      call: 'fst_mining',
       params: 0
     }),
     new Method({
       name: 'getHashrate',
-      call: 'eth_hashrate',
+      call: 'fst_hashrate',
       params: 0,
       outputFormatter: utils.hexToNumber
     }),
     new Method({
       name: 'isSyncing',
-      call: 'eth_syncing',
+      call: 'fst_syncing',
       params: 0,
       outputFormatter: formatter.outputSyncingFormatter
     }),
     new Method({
       name: 'getGasPrice',
-      call: 'eth_gasPrice',
+      call: 'fst_gasPrice',
       params: 0,
       outputFormatter: formatter.outputBigNumberFormatter
     }),
     new Method({
       name: 'getAccounts',
-      call: 'eth_accounts',
+      call: 'fst_accounts',
       params: 0,
       outputFormatter: utils.toChecksumAddress
     }),
     new Method({
       name: 'getBlockNumber',
-      call: 'eth_blockNumber',
+      call: 'fst_blockNumber',
       params: 0,
       outputFormatter: utils.hexToNumber
     }),
     new Method({
       name: 'getBalance',
-      call: 'eth_getBalance',
+      call: 'fst_getBalance',
       params: 2,
       inputFormatter: [formatter.inputAddressFormatter, formatter.inputDefaultBlockNumberFormatter],
       outputFormatter: formatter.outputBigNumberFormatter
     }),
     new Method({
       name: 'getStorageAt',
-      call: 'eth_getStorageAt',
+      call: 'fst_getStorageAt',
       params: 3,
       inputFormatter: [formatter.inputAddressFormatter, utils.numberToHex, formatter.inputDefaultBlockNumberFormatter]
     }),
     new Method({
       name: 'getCode',
-      call: 'eth_getCode',
+      call: 'fst_getCode',
       params: 2,
       inputFormatter: [formatter.inputAddressFormatter, formatter.inputDefaultBlockNumberFormatter]
     }),
@@ -371,7 +371,7 @@ const Fst = function Fst() {
     }),
     new Method({
       name: 'getTransaction',
-      call: 'eth_getTransactionByHash',
+      call: 'fst_getTransactionByHash',
       params: 1,
       inputFormatter: [null],
       outputFormatter: formatter.outputTransactionFormatter
@@ -385,39 +385,39 @@ const Fst = function Fst() {
     }),
     new Method({
       name: 'getTransactionReceipt',
-      call: 'eth_getTransactionReceipt',
+      call: 'fst_getTransactionReceipt',
       params: 1,
       inputFormatter: [null],
       outputFormatter: formatter.outputTransactionReceiptFormatter
     }),
     new Method({
       name: 'getTransactionCount',
-      call: 'eth_getTransactionCount',
+      call: 'fst_getTransactionCount',
       params: 2,
       inputFormatter: [formatter.inputAddressFormatter, formatter.inputDefaultBlockNumberFormatter],
       outputFormatter: utils.hexToNumber
     }),
     new Method({
       name: 'sendSignedTransaction',
-      call: 'eth_sendRawTransaction',
+      call: 'fst_sendRawTransaction',
       params: 1,
       inputFormatter: [null]
     }),
     new Method({
       name: 'signTransaction',
-      call: 'eth_signTransaction',
+      call: 'fst_signTransaction',
       params: 1,
       inputFormatter: [formatter.inputTransactionFormatter]
     }),
     new Method({
       name: 'sendTransaction',
-      call: 'eth_sendTransaction',
+      call: 'fst_sendTransaction',
       params: 1,
       inputFormatter: [formatter.inputTransactionFormatter]
     }),
     new Method({
       name: 'sign',
-      call: 'eth_sign',
+      call: 'fst_sign',
       params: 2,
       inputFormatter: [formatter.inputSignFormatter, formatter.inputAddressFormatter],
       transformPayload: function (payload) {
@@ -427,37 +427,37 @@ const Fst = function Fst() {
     }),
     new Method({
       name: 'call',
-      call: 'eth_call',
+      call: 'fst_call',
       params: 2,
       inputFormatter: [formatter.inputCallFormatter, formatter.inputDefaultBlockNumberFormatter]
     }),
     new Method({
       name: 'estimateGas',
-      call: 'eth_estimateGas',
+      call: 'fst_estimateGas',
       params: 1,
       inputFormatter: [formatter.inputCallFormatter],
       outputFormatter: utils.hexToNumber
     }),
     new Method({
       name: 'submitWork',
-      call: 'eth_submitWork',
+      call: 'fst_submitWork',
       params: 3
     }),
     new Method({
       name: 'getWork',
-      call: 'eth_getWork',
+      call: 'fst_getWork',
       params: 0
     }),
     new Method({
       name: 'getPastLogs',
-      call: 'eth_getLogs',
+      call: 'fst_getLogs',
       params: 1,
       inputFormatter: [formatter.inputLogFormatter],
       outputFormatter: formatter.outputLogFormatter
     }),
     new Method({
       name: 'getChainId',
-      call: 'eth_chainId',
+      call: 'fst_chainId',
       params: 0,
       outputFormatter: utils.hexToNumber
     }),

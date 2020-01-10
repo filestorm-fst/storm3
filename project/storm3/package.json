@@ -1,6 +1,6 @@
 {
   "name": "storm3",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.2",
   "description": "This is an alpha version",
   "main": "export.js",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "storm3-core": "0.0.1-alpha.1",
-    "storm3-fst": "0.0.1-alpha.1",
+    "storm3-fst": "0.0.1-alpha.2",
     "storm3-net": "0.0.1-alpha.1",
     "storm3-fst-personal": "0.0.1-alpha.1",
     "storm3-shh": "0.0.1-alpha.1",
