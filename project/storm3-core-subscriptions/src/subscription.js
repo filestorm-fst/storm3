@@ -195,7 +195,7 @@ Subscription.prototype.subscribe = function () {
   if (payload.params[0] === 'logs' && _.isObject(payload.params[1]) && payload.params[1].hasOwnProperty('fromBlock') && isFinite(payload.params[1].fromBlock)) {
     // send the subscription request
     this.options.requestManager.send({
-      method: 'eth_getLogs',
+      method: 'fst_getLogs',
       params: [payload.params[1]]
     }, function (err, logs) {
       if (!err) {

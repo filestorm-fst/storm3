@@ -272,7 +272,7 @@ const Fst = function Fst() {
   let methods = [
     new Method({
       name: 'getNodeInfo',
-      call: 'web3_clientVersion'
+      call: 'storm3_clientVersion'
     }),
     new Method({
       name: 'getProtocolVersion',

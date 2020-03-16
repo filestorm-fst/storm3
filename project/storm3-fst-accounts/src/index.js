@@ -39,18 +39,18 @@ const Accounts = function Accounts() {
     }),
     new Method({
       name: 'getChainId',
-      call: 'eth_chainId',
+      call: 'fst_chainId',
       params: 0,
       outputFormatter: utils.hexToNumber
     }),
     new Method({
       name: 'getGasPrice',
-      call: 'eth_gasPrice',
+      call: 'fst_gasPrice',
       params: 0
     }),
     new Method({
       name: 'getTransactionCount',
-      call: 'eth_getTransactionCount',
+      call: 'fst_getTransactionCount',
       params: 2,
       inputFormatter: [function (address) {
         if (utils.isAddress(address)) {

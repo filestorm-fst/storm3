@@ -150,7 +150,7 @@ const inputTransactionFormatter = function (options) {
 };
 
 /**
- * Hex encodes the data passed to eth_sign and personal_sign
+ * Hex encodes the data passed to fst_sign and personal_sign
  *
  * @method inputSignFormatter
  * @param {String} data

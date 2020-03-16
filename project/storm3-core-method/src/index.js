@@ -187,7 +187,7 @@ Method.prototype._confirmTransaction = function (defer, result, payload) {
   let _ethereumCalls = [
     new Method({
       name: 'getBlockByNumber',
-      call: 'eth_getBlockByNumber',
+      call: 'fst_getBlockByNumber',
       params: 2,
       inputFormatter: [formatters.inputBlockNumberFormatter, function (val) {
         return !!val;
@@ -196,20 +196,20 @@ Method.prototype._confirmTransaction = function (defer, result, payload) {
     }),
     new Method({
       name: 'getTransactionReceipt',
-      call: 'eth_getTransactionReceipt',
+      call: 'fst_getTransactionReceipt',
       params: 1,
       inputFormatter: [null],
       outputFormatter: formatters.outputTransactionReceiptFormatter
     }),
     new Method({
       name: 'getCode',
-      call: 'eth_getCode',
+      call: 'fst_getCode',
       params: 2,
       inputFormatter: [formatters.inputAddressFormatter, formatters.inputDefaultBlockNumberFormatter]
     }),
     new Subscriptions({
       name: 'subscribe',
-      type: 'eth',
+      type: 'fst',
       subscriptions: {
         'newBlockHeaders': {
           subscriptionName: 'newHeads', // replace subscription with this name
@@ -501,7 +501,7 @@ const getWallet = function (from, accounts) {
 
 Method.prototype.buildCall = function () {
   let method = this,
-    isSendTx = (method.call === 'eth_sendTransaction' || method.call === 'eth_sendRawTransaction'); // || method.call === 'personal_sendTransaction'
+    isSendTx = (method.call === 'fst_sendTransaction' || method.call === 'fst_sendRawTransaction'); // || method.call === 'personal_sendTransaction'
 
   // actual send function
   let send = function () {
@@ -554,7 +554,7 @@ Method.prototype.buildCall = function () {
     let sendSignedTx = function (sign) {
 
       let signedPayload = _.extend({}, payload, {
-        method: 'eth_sendRawTransaction',
+        method: 'fst_sendRawTransaction',
         params: [sign.rawTransaction]
       });
 
@@ -567,8 +567,8 @@ Method.prototype.buildCall = function () {
       if (method && method.accounts && method.accounts.wallet && method.accounts.wallet.length) {
         let wallet;
 
-        // ETH_SENDTRANSACTION
-        if (payload.method === 'eth_sendTransaction') {
+        // FST_SENDTRANSACTION
+        if (payload.method === 'fst_sendTransaction') {
           var tx = payload.params[0];
           wallet = getWallet((_.isObject(tx)) ? tx.from : null, method.accounts);
 
@@ -602,8 +602,8 @@ Method.prototype.buildCall = function () {
               });
           }
 
-          // ETH_SIGN
-        } else if (payload.method === 'eth_sign') {
+          // FST_SIGN
+        } else if (payload.method === 'fst_sign') {
           let data = payload.params[1];
           wallet = getWallet(payload.params[0], method.accounts);
 
@@ -631,7 +631,7 @@ Method.prototype.buildCall = function () {
 
       let getGasPrice = (new Method({
         name: 'getGasPrice',
-        call: 'eth_gasPrice',
+        call: 'fst_gasPrice',
         params: 0
       })).createFunction(method.requestManager);
 
