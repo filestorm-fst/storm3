@@ -1,6 +1,6 @@
 {
   "name": "storm3-core-promievent",
-  "version": "0.0.1-alpha.101",
+  "version": "0.0.1-alpha.103",
   "description": "This is an alpha version",
   "main": "export.js",
   "scripts": {

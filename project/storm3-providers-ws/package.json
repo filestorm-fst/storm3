@@ -1,6 +1,6 @@
 {
   "name": "storm3-providers-ws",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.10",
   "description": "This is an alpha version",
   "main": "export.js",
   "scripts": {
@@ -14,6 +14,6 @@
   "dependencies": {
     "underscore": "1.9.1",
     "@web3-js/websocket": "1.0.30",
-    "storm3-core-helpers": "0.0.1-alpha.1"
+    "storm3-core-helpers": "^0.0.1-alpha.1"
   }
 }

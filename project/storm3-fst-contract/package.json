@@ -1,6 +1,6 @@
 {
   "name": "storm3-fst-contract",
-  "version": "0.0.1-alpha.2",
+  "version": "0.0.1-alpha.10",
   "description": "This is an alpha version",
   "main": "export.js",
   "scripts": {
@@ -13,13 +13,13 @@
   },
   "dependencies": {
     "underscore": "1.9.1",
-    "storm3-core": "0.0.1-alpha.1",
-    "storm3-core-method": "0.0.1-alpha.1",
-    "storm3-utils": "0.0.1-alpha.1",
-    "storm3-core-subscriptions": "0.0.1-alpha.1",
-    "storm3-core-helpers": "0.0.1-alpha.1",
-    "storm3-core-promievent": "0.0.1-alpha.1",
-    "storm3-fst-abi": "0.0.1-alpha.1"
+    "storm3-core": "^0.0.1-alpha.1",
+    "storm3-core-method": "^0.0.1-alpha.1",
+    "storm3-utils": "^0.0.1-alpha.1",
+    "storm3-core-subscriptions": "^0.0.1-alpha.1",
+    "storm3-core-helpers": "^0.0.1-alpha.1",
+    "storm3-core-promievent": "^0.0.1-alpha.1",
+    "storm3-fst-abi": "^0.0.1-alpha.1"
 
   }
 }

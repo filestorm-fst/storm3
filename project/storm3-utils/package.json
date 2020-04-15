@@ -1,6 +1,6 @@
 {
   "name": "storm3-utils",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.10",
   "description": "This is an alpha version",
   "main": "export.js",
   "scripts": {

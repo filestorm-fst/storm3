@@ -1,6 +1,6 @@
 {
   "name": "storm3-fst-abi",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.10",
   "description": "This is an alpha version",
   "main": "export.js",
   "scripts": {
@@ -14,6 +14,6 @@
   "dependencies": {
     "underscore": "1.9.1",
     "ethers": "4.0.41",
-    "storm3-utils": "0.0.1-alpha.1"
+    "storm3-utils": "^0.0.1-alpha.1"
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "storm3-bzz",
-  "version": "0.0.001-alpha.001",
+  "version": "0.0.001-alpha.10",
   "description": "This is an alpha version",
   "main": "export.js",
   "scripts": {

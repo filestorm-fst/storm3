@@ -1,6 +1,6 @@
 {
   "name": "storm3-shh",
-  "version": "0.0.1-alpha.1",
+  "version": "0.0.1-alpha.10",
   "description": "This is an alpha version",
   "main": "export.js",
   "scripts": {
@@ -12,9 +12,9 @@
   "devDependencies": {
   },
   "dependencies": {
-    "storm3-core": "0.0.1-alpha.1",
-    "storm3-core-subscriptions": "0.0.1-alpha.1",
-    "storm3-core-method": "0.0.1-alpha.1",
-    "storm3-net": "0.0.1-alpha.1"
+    "storm3-core": "^0.0.1-alpha.1",
+    "storm3-core-subscriptions": "^0.0.1-alpha.1",
+    "storm3-core-method": "^0.0.1-alpha.1",
+    "storm3-net": "^0.0.1-alpha.1"
   }
 }
