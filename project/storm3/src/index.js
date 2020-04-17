@@ -1,4 +1,14 @@
 const version = require('../package.json').version;
+
+
+// const core = require('../../storm3-core/export');
+// const Fst = require('../../storm3-fst/export');
+// const Net = require('../../storm3-net/export');
+// const Personal = require('../../storm3-fst-personal/export');
+// const Shh = require('../../storm3-shh/export');
+// const Bzz = require('../../storm3-bzz/export');
+// const utils = require('../../storm3-utils/export');
+//
 const core = require('storm3-core');
 const Fst = require('storm3-fst');
 const Net = require('storm3-net');

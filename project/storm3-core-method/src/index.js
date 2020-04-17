@@ -196,7 +196,8 @@ Method.prototype._confirmTransaction = function (defer, result, payload) {
     }),
     new Method({
       name: 'getTransactionReceipt',
-      call: 'fst_getTransactionReceipt',
+      // call: 'fst_getTransactionReceipt',
+      call: 'eth_getTransactionReceipt',
       params: 1,
       inputFormatter: [null],
       outputFormatter: formatters.outputTransactionReceiptFormatter
@@ -501,7 +502,8 @@ const getWallet = function (from, accounts) {
 
 Method.prototype.buildCall = function () {
   let method = this,
-    isSendTx = (method.call === 'fst_sendTransaction' || method.call === 'fst_sendRawTransaction'); // || method.call === 'personal_sendTransaction'
+    // isSendTx = (method.call === 'fst_sendTransaction' || method.call === 'fst_sendRawTransaction'); // || method.call === 'personal_sendTransaction'
+    isSendTx = (method.call === 'eth_sendTransaction' || method.call === 'eth_sendRawTransaction'); // || method.call === 'personal_sendTransaction'
 
   // actual send function
   let send = function () {
