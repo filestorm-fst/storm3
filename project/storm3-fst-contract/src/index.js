@@ -734,7 +734,7 @@ Contract.prototype._processExecuteArguments = function _processExecuteArguments(
  * @param {Boolean} makeRequest if true, it simply returns the request parameters, rather than executing it
  */
 Contract.prototype._executeMethod = function _executeMethod() {
-  let _this = this,
+  var _this = this,
     args = this._parent._processExecuteArguments.call(this, Array.prototype.slice.call(arguments), defer),
     defer = promiEvent((args.type !== 'send')),
     ethAccounts = _this.constructor._ethAccounts || _this._ethAccounts;

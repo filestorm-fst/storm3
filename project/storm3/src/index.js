@@ -60,14 +60,22 @@ core.addProviders(Storm3);
 
 
 Storm3.encodeAddress = function (address) {
-  if (/^0x/.test(address)) {
-    address = address.slice(2, address.length);
+
+  if (!Storm3.utils.isAddress(address)) {
+     throw new Error('Please enter a valid address!');
   }
-  return 't6xgsbls' + Storm3.utils.sha3(address).slice(2, 10) + address
+
+  if (!/^0x/.test(address)) {
+    address = '0x' + address;
+  }
+  return 't6xgsbls' + Storm3.utils.sha3(address).substring(2, 10) + (address.substring(2, address.length));
 };
 
 Storm3.decodeAddress = function (address) {
-  return '0x' + address.slice(16, address.length);
+  if (address.length !== 56) {
+     throw new Error('Please enter a valid address!');
+  }
+  return '0x' + address.substring(16, address.length);
 };
 
 module.exports = Storm3;

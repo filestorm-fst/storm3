@@ -1,6 +1,6 @@
 {
   "name": "storm3-fst-contract",
-  "version": "0.0.1-alpha.10",
+  "version": "0.0.1-alpha.11",
   "description": "This is an alpha version",
   "main": "export.js",
   "scripts": {
